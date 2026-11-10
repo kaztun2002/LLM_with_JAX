@@ -1,0 +1,23 @@
+[project]
+name = "llm-with-jax"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Kazeem", email = "kaztun2002@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "flax>=0.12.12",
+    "ipykernel>=7.4.0",
+    "jax>=0.12.0.1",
+    "matplotlib>=3.11.2",
+    "tiktoken>=0.14.0",
+]
+
+[project.scripts]
+llm-with-jax = "llm_with_jax:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
